@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                       Container(
                         margin: EdgeInsets.only(right: 15),
-                        child: Text('اسم المطعم'),
+                        child: Text(' : اسم المطعم'),
                         alignment: Alignment.bottomRight,
                       ),
                       SizedBox(
