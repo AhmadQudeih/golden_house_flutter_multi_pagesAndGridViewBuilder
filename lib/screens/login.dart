@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:golden_house_flutter_multi_pages/screens/homeScreen.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -37,7 +38,14 @@ class Login extends StatelessWidget {
                 ),
                 Center(
                     child: ElevatedButton(
-                        onPressed: () {}, child: Text('تسجيل الدخول')))
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => HomeScreen()),
+                          );
+                        },
+                        child: Text('تسجيل الدخول')))
               ],
             ),
           ),
