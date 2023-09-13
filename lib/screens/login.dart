@@ -25,17 +25,13 @@ class Login extends StatelessWidget {
                   decoration: InputDecoration(
                       hintText: 'اسم المستخدم', border: OutlineInputBorder()),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
+                SizedBox(height: 20),
                 TextField(
                     decoration: InputDecoration(
                   hintText: 'كلمة المرور',
                   border: OutlineInputBorder(),
                 )),
-                SizedBox(
-                  height: 20,
-                ),
+                SizedBox(height: 20),
                 Center(
                     child: ElevatedButton(
                         onPressed: () {
