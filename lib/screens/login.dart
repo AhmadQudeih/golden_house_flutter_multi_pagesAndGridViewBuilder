@@ -33,15 +33,16 @@ class Login extends StatelessWidget {
                 )),
                 SizedBox(height: 20),
                 Center(
-                    child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => HomeScreen()),
-                          );
-                        },
-                        child: Text('تسجيل الدخول')))
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => HomeScreen()),
+                      );
+                    },
+                    child: Text('تسجيل الدخول'),
+                  ),
+                ),
               ],
             ),
           ),
